@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/icon"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/mainwet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/description"
+        android:layout_below="@+id/description"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/temp"
+        android:layout_below="@+id/icon"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tempmax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mainwet"
+        android:layout_below="@+id/mainwet"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pressure"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp"
+        android:src="@drawable/common_signin_btn_icon_dark" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/icon"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/tempmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tempmax"
+        android:layout_alignTop="@+id/wind"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tempmin"
+        android:layout_below="@+id/tempmax"
+        android:layout_marginTop="16dp"
+        android:text="TextView" />
+
+</RelativeLayout>

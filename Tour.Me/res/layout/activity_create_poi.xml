@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreatePOI" >
+
+    <Button
+        android:id="@+id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/poidescription"
+        android:layout_below="@+id/poidescription"
+        android:background="@drawable/btn_bg2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="90dp"
+        android:text="Take Photo" />
+
+    <Button
+        android:id="@+id/createpoibtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_bg2"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginBottom="24dp"
+        android:text="Create POI" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignTop="@+id/photo"
+        android:src="@drawable/common_signin_btn_icon_dark" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/poiaddress"
+        android:layout_marginTop="25dp"
+        android:text="Description" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="43dp"
+        android:text="Name :" />
+
+    <EditText
+        android:id="@+id/poiname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/textView3"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/poiaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/poiname"
+        android:layout_below="@+id/poiname"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/poiaddress"
+        android:layout_alignBottom="@+id/poiaddress"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="Address" />
+
+    <TextView
+        android:id="@+id/poicategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="25dp"
+        android:text="Category " />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="150px"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/poidescription"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/poicategory" />
+
+    <EditText
+        android:id="@+id/poidescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>

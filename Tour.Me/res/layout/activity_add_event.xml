@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".AddEvent" >
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textview"
+        android:layout_below="@+id/textview"
+        android:layout_marginTop="25dp"
+        android:text="Date" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="22dp"
+        android:text="Time" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="26dp"
+        android:text="Description" />
+
+    <EditText
+        android:id="@+id/eventname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_alignLeft="@+id/setlocation"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/eventdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/eventname"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/eventtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/eventdate"
+        android:layout_alignTop="@+id/textView2"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/setlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/btn_bg2"
+        android:text="Set Location" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/eventtime"
+        android:layout_alignTop="@+id/textView3"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/regevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/setlocation"
+        android:layout_below="@+id/setlocation"
+        android:background="@drawable/btn_bg2"
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        android:text="Add Event" />
+
+</RelativeLayout>

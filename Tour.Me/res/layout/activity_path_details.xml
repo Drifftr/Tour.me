@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".PathDetails" >
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/path" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/distance" />
+
+    <TextView
+        android:id="@+id/pathto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/time" />
+
+    <TextView
+        android:id="@+id/path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Path Details"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    
+
+</RelativeLayout>

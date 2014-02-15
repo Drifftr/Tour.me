@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mapdemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission
+        android:name="com.example.mapdemo.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.mapdemo.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyA_s5FnpIRG4IK9Jv404HNzWrTl0hHf0PQ" />
+
+        <activity
+            android:name="com.example.mapdemo.LoginActivity"
+            android:label="@string/login_title"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+             
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.RegistrationActivity"
+            android:label="@string/title_activity_registration"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.MainMenuActivity"
+            android:label="@string/title_activity_main_menu"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+           
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.MyJouneyActivity"
+            android:label="@string/title_activity_my_jouney"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.MapTestActivity"
+            android:label="@string/title_activity_map_test" >
+        </activity>
+
+        <!--
+        <receiver android:name="com.example.mapdemo.PathTrackerService" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        -->
+        <activity
+            android:name="com.example.mapdemo.PathTrackerService"
+            android:label="@string/title_activity_path_tracker_service" >
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.NearMeActivity"
+            android:label="@string/title_activity_near_me" >
+            
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.NavigationTest"
+            android:label="@string/title_activity_navigation_test" >
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.TrainSchedule"
+            android:label="@string/title_activity_train_schedule"
+            android:theme="@android:style/Theme.Holo" >
+        </activity>
+
+        <service android:name="com.example.mapdemo.ServiceActivity" >
+        </service>
+
+        <activity
+            android:name="com.example.mapdemo.PublicPOI"
+            android:label="@string/title_activity_public_poi"
+            android:theme="@android:style/Theme.Holo" >
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.BrowsePOI"
+            android:label="@string/title_activity_browse_poi"
+            android:theme="@android:style/Theme.Holo" >
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.Navigate"
+            android:label="@string/title_activity_navigate" >
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.CreatePOI"
+            android:label="@string/title_activity_create_poi"
+            android:theme="@android:style/Theme.Holo" >
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.CreateJourney"
+            android:label="@string/title_activity_create_journey"
+            android:theme="@android:style/Theme.Holo" >
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.SetLocation"
+            android:label="@string/title_activity_set_location"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.AddEvent"
+            android:label="@string/title_activity_add_event"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.JourneyMap"
+            android:label="@string/title_activity_journey_map" >
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.EventView"
+            android:label="@string/title_activity_event_view"
+            android:theme="@android:style/Theme.Holo" >
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.JourneyList"
+            android:label="@string/title_activity_journey_list"
+            android:theme="@android:style/Theme.Holo" >
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.SelectStation"
+            android:label="@string/title_activity_select_station"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.WeatherMap"
+            android:label="@string/title_activity_weather_map" >
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.WeatherResults"
+            android:label="@string/title_activity_weather_results"
+            android:theme="@android:style/Theme.Holo" >
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.Dateselect"
+            android:label="@string/title_activity_dateselect" >
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.PathDetails"
+            android:label="@string/title_activity_path_details"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.example.mapdemo.Splash"
+            android:label="@string/title_activity_splash"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

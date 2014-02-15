@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JourneyList" >
+
+    <EditText
+      	android:id="@+id/inputSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_hint"
+        android:inputType="textVisiblePassword"
+        android:background="@android:color/background_dark" />
+
+    <ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_above="@+id/createJourney"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/background_dark" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/createJourney"
+        android:background="@drawable/btn_bg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Create New Journey" />
+
+</RelativeLayout>

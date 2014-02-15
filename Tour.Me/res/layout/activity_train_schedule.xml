@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".TrainSchedule" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/time"
+        android:layout_marginTop="54dp"
+        android:layout_toLeftOf="@+id/time"
+        android:text="@string/timefrom" />
+
+    <EditText
+        android:id="@+id/fromtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imat"
+        android:layout_marginBottom="14dp"
+        android:layout_toLeftOf="@+id/editText1"
+        android:text="@string/imat" />
+
+    <Spinner
+        android:id="@+id/imat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fromtime"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fromtime"
+        android:layout_marginTop="45dp" />
+
+    <EditText
+        android:id="@+id/totime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imat"
+        android:layout_below="@+id/fromtime"
+        android:layout_marginTop="15dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/totime"
+        android:text="@string/textTime" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fromtime"
+        android:layout_alignRight="@+id/fromtime"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/date"
+        android:layout_alignBottom="@+id/date"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="Date" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignTop="@+id/goingto"
+        android:layout_marginTop="20dp"
+        android:text="@string/goingto" />
+
+    <Spinner
+        android:id="@+id/goingto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imat"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/goingto"
+        android:layout_below="@+id/goingto"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/btn_bg2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/checktrains" />
+
+</RelativeLayout>
